@@ -1,0 +1,31 @@
+.text-content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .peculiarities__list {
+    display: flex;
+  }
+  
+  .peculiarities__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .peculiarities__top {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+  }
+  .peculiarities__text {
+    max-width: 270px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }

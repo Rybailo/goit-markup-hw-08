@@ -1,0 +1,40 @@
+
+.image-menu {
+    padding-bottom: 94px;
+  }
+  
+  .image__list {
+    display: flex;
+  }
+  
+  .image__top-wrap {
+    position: relative;
+  }
+  
+  .image__list-text {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 70px;
+    width: 100%;
+  }
+  
+  .image__top {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  
+  .image__item:not(:last-child) {
+    margin-right: 30px;
+  }
