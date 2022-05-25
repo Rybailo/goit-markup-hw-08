@@ -12,6 +12,13 @@
       url(../images/bg_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding-top: 118px;
+      padding-bottom: 118px;
+      
+    }
+    
   }
   
   .inform__text {
@@ -27,6 +34,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-titlec);
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
   
   .inform__botton {

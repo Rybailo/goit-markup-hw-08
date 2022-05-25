@@ -1,6 +1,9 @@
 
 .image-menu {
     padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
   
   .image__list {

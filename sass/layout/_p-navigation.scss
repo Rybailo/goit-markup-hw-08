@@ -1,7 +1,11 @@
 
 .navigation {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   
   .navigation-button {
@@ -30,10 +34,19 @@
   
   .navigation-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
   }
   
   .navigation-item:not(:last-child) {
     margin-right: 8px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
   
