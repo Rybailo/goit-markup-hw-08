@@ -12,6 +12,12 @@
   .contact__list {
     margin-top: 20px;
   }
+
+  .footer__logo {
+    @media screen and (max-width: 1199px) {
+      margin-right: 0;
+    }
+  }
   
   
   
@@ -59,11 +65,32 @@
   }
   
   .footer-navigation {
+    @media screen and (min-width: 768px) {
     display: flex;
   }
+      @media screen and (max-width: 1199px) {
+        justify-content: space-between;
+        flex-wrap: wrap;
+      
+      }
+    
+  }
   
+
+  .footer-navigation__item {
+    min-width: 300px;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+  }
+
+
   .footer-navigation__item:not(:last-child) {
-    margin-right: 70px;
+    @media screen and (min-width: 1200px){
+    /* margin-right: 70px; */
+    }
   }
   
   .footer-navigation__text {
@@ -79,6 +106,10 @@
   
   .footer-icon {
     display: flex;
+    @media screen and (max-width: 1199px) {
+      justify-content: center;
+    }
+    
   }
   
   .footer-icons-item:not(:last-child) {
@@ -110,8 +141,15 @@
   
   
   .footer-subscription-wrap {
-    margin-left: 23px;
     margin-top: 12px;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+      margin: auto;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-left: 23px;
+    
+    }
   }
   
   .footer-subscription-title {
@@ -124,12 +162,17 @@
     margin-bottom: 20px;
   }
   .footer-subscription {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
+    }
   }
   
   
   .footer-sub-text {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -140,16 +183,22 @@
     font-size: 16px;
     line-height: 1.25;
     padding: 16px;
+    @media screen and (min-width: 1200px) {
     display: flex;
+    width: 358px;
+    }
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
   
   .sub-btn {
+    @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+    }
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    margin: auto ;
     background-color: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -159,6 +208,10 @@
     font-size: 16px;
     line-height: 1.88;
     display: flex;
+    @media screen and (min-width: 1200px) {
+    
+    margin-left: 12px;
+    }
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
