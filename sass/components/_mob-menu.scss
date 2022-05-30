@@ -1,0 +1,149 @@
+.mob-menu-open {
+   margin-left: auto;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 15px;
+   border: none;
+   background-color:initial;
+   color: #212121;
+   transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover, &:focus {
+       fill: #2196F3;
+   }
+   @media screen and (min-width: 767px) {
+    display: none;
+   }
+}
+
+
+
+.mob-menu-close {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #ffffff;
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        fill: #2196F3;
+    }
+    @media screen and (min-width: 320px) and (max-width: 474px) {
+        margin: 0 250px;
+
+    }
+}
+
+
+
+.mob-menu {
+    min-width: 500px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+    overflow-y: auto;
+    @media screen and (min-width: 767px) {
+        display: none;
+       }
+       transition: opacity 500ms, visibility 500ms;
+}
+
+.mob-menu-list {
+    
+}
+
+.mob-menu-list__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mob-menu-list__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        color: #2196F3;
+    }
+}
+
+.mob-connect {
+    margin-bottom: 64px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mob-connect__tel {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;  
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    
+}
+
+.mob-connect__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+
+
+.mob-messenger {
+    display: flex;
+    padding-bottom: 48px;
+}
+
+.mob-messenger-item {
+    
+  /*   &:not(:last-child) {
+        margin-right: 10px;
+    } */
+
+}
+
+.line {
+    
+    width: 22px;
+    height: 0px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mob-messenger-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    @media screen and (max-width: 380px) {
+        font-size: 14px;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}

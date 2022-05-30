@@ -11,6 +11,10 @@
   }
   
   .menu-list__item {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    
     padding-top: 24px;
     padding-bottom: 25px;
     &:not(:last-child) {
@@ -33,6 +37,14 @@
   .connect {
     margin-left: auto;
     display: flex;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      display: block;
+      margin-left: 14px;
+      
+    }
   }
   
   .connect__icon {
@@ -68,6 +80,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     &:hover, &:focus {
     color: var(--accentc);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-left: 50px;
+    margin-bottom: 10px;
   }
   }
  

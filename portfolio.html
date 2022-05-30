@@ -14,28 +14,71 @@
     <title>Document</title>
 </head>
 <body>
-<!--     <header class="header">
+    <header class="header">
         <div class="container">
-         <nav class="header-navigation">
-           <a href="./index.html" class="logo header__logo link">Web<span class="logo__color--dark">Studio</span></span></a>
-           <ul class="menu-list list">
-               <li class="menu-list__item"><a class="menu-list__link link" href="./index.html">Студия</a></li>
-               <li class="menu-list__item"><a class="menu-list__link decoration link" href="./portfolio.html">Портфолио</a></li>
+            <nav class="header-navigation">
+             <a href="./index.html" class="logo link">Web<span class="logo__color--dark">Studio</span></span></a>
+             <button type="button" class="mob-menu-open">
+               <svg class="mob-menu-icon" width="40px" height="40px">
+                   <use href="./images/icons.svg#icon-mob-menu"></use>
+               </svg></button>
+             <ul class="menu-list list">
+               <li class="menu-list__item"><a class="menu-list__link decoration link" href="./index.html">Студия</a></li>
+               <li class="menu-list__item"><a class="menu-list__link link" href="./portfolio.html">Портфолио</a></li>
                <li class="menu-list__item"><a class="menu-list__link link" href="">Контакты</a></li>
-           </ul>
-           <div class="connect">
-           <a class="connect__mail link" href="mailto:info@devstudio.com">
+                  </ul>
+                  <div class="connect">
+                  <a class="connect__mail link" href="mailto:info@devstudio.com">
                <svg class="connect__icon" width="16px" height="12px">
                                   <use href="./images/icons.svg#icon-mail"></use>
                               </svg>info@devstudio.com</a>
-           <a class="connect__tel link" href="tel:+380961111111">
+               <a class="connect__tel link" href="tel:+380961111111">
                <svg class="connect__icon" width="10px" height="16px">
                                   <use href="./images/icons.svg#icon-phone"></use>
                               </svg>+38 096 111 11 11</a>
            </div>
        </nav>   
-        </div>   
-       </header>  -->   
+        </div>
+           <div class="mob-menu is-hidden">
+               <div class="container">
+                   <div class="mob-menu-top">
+                       <button type="button" class="mob-menu-close">
+                           <svg class="mob-menu-icon" width="40px" height="40px">
+                               <use href="./images/icons.svg#icon-close"></use>
+                           </svg>
+                       </button>
+                       <ul class="mob-menu-list list">
+                           <li class="mob-menu-list__item"><a class="mob-menu-list__link link" href="./index.html">Студия</a></li>
+                           <li class="mob-menu-list__item"><a class="mob-menu-list__link link" href="./portfolio.html">Портфолио</a></li>
+                           <li class="mob-menu-list__item"><a class="mob-menu-list__link link" href="">Контакты</a></li>
+                       </ul>
+                   </div>
+                   <div class="mob-menu-bottom">
+                       <div class="mob-connect">
+                           <a class="mob-connect__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                           <a class="mob-connect__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                       </div>
+                       <ul class="mob-messenger list">
+                           <li class="mob-messenger-item">
+                               <a href="" class="mob-messenger-link link">Instagram</a>
+                               <span class="line"></span>
+                           </li>
+                           <li class="mob-messenger-item">
+                               <a href="" class="mob-messenger-link link">Twitter</a>
+                               <span class="line"></span>
+                           </li>
+                           <li class="mob-messenger-item">
+                               <a href="" class="mob-messenger-link link">Facebook</a>
+                               <span class="line"></span>
+                           </li>
+                           <li class="mob-messenger-item">
+                               <a href="" class="mob-messenger-link link">LinkedIn</a>
+                           </li>                     
+                       </ul>
+                   </div>
+               </div>    
+           </div>
+       </header>  
     <main>
     <section class="navigation">
         <div class="container">
@@ -49,63 +92,91 @@
     
     <div class="image-content">
         <ul class="image-content-list list">
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-1.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img  srcset="./images/portfolio-1.jpg 1x,
+                    ./images/portfolio-1-2x.jpg 2x"
+                    class="image-content-img" src="./images/portfolio-1.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top " >Технокряк</h3>
                 <p class="image-content-text wrap">Веб-сайт</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-2.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-2.jpg 1x,
+                    ./images/portfolio-2-2x.jpg 2x"
+                     class="image-content-img" src="./images/portfolio-2.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top " >Постер <span lang="en"> New Orlean vs Golden Star</span></h3>
                 <p class="image-content-text ">Дизайн</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-3.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-3.jpg 1x,
+                    ./images/portfolio-3-2x.jpg 2x"
+                     class="image-content-img" src="./images/portfolio-3.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top " >Ресторан <span lang="en"></span>Seafood</span></h3>
                 <p class="image-content-text ">Приложение</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-4.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-4.jpg 1x,
+                    ./images/portfolio-4-2x.jpg 2x" 
+                    class="image-content-img" src="./images/portfolio-4.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top" >Проект <span lang="en">Prime</span></h3>
                 <p class="image-content-text">Маркетинг</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-5.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-5.jpg 1x,
+                    ./images/portfolio-5-2x.jpg 2x"
+                     class="image-content-img" src="./images/portfolio-5.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top" >Проект <span lang="en"></span>Boxes</span></h3>
                 <p class="image-content-text">Приложение</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-6.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-6.jpg 1x,
+                    ./images/portfolio-6-2x.jpg 2x"
+                     class="image-content-img" src="./images/portfolio-6.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top" ><span lang="en">Inspiration has no Borders</span></h3>
                 <p class="image-content-text">Веб-сайт</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-7.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-7.jpg 1x,
+                    ./images/portfolio-7-2x.jpg 2x"
+                     class="image-content-img" src="./images/portfolio-7.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top" >Издание <span lang="en"> Limited Edition</span></h3>
                 <p class="image-content-text">Дизайн</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-8.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-8.jpg 1x,
+                    ./images/portfolio-8-2x.jpg 2x"
+                     class="image-content-img" src="./images/portfolio-8.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top" >Проект <span lang="en">LAB</span></h3>
                 <p class="image-content-text">Маркетинг</p>
                 </div>
             </li>
-            <li class="image-content-item"><div class="image-animation"><img  class="image-content-img" src="./images/portfolio-9.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-    
+            <li class="image-content-item">
+                <div class="image-animation">
+                    <img srcset="./images/portfolio-9.jpg 1x,
+                    ./images/portfolio-9-2x.jpg 2x"
+                     class="image-content-img" src="./images/portfolio-9.jpg" alt="картинка" height="294" width="370"><p class="image-animation-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
                 <div class="image-boreder">
                 <h3 class="image-content-top" ><span lang="en">Growing Business</span></h3>
                 <p class="image-content-text">Приложение</p>
