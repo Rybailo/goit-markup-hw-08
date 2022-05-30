@@ -36,6 +36,7 @@ body {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 :root {
@@ -633,6 +634,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .inform {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/inform-bg-desk.jpg);
   }
 }
@@ -709,6 +712,19 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .peculiarities__list {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .peculiarities__list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .peculiarities__item {
   margin-left: 30px;
 }
@@ -719,16 +735,24 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .peculiarities__item {
-    width: calc(100% / 4 - 30px);
-    padding-top: 34px;
-    padding-bottom: 34px;
+@media screen and (max-width: 1200px) {
+  .peculiarities__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
-.peculiarities__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .peculiarities__item {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
+.peculiarities__icon-wrap {
+  display: flex;
+  justify-content: center;
+  background-color: #F5F4FA;
+  height: 120px;
+  align-items: center;
 }
 
 .peculiarities__top {
@@ -740,6 +764,12 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .peculiarities__top {
+    text-align: center;
+  }
 }
 
 .peculiarities__text {
@@ -830,6 +860,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .team__list {
+    margin-bottom: -30px;
+  }
+}
+
 .team__item-top {
   margin-bottom: 10px;
   font-weight: 500;
@@ -857,24 +893,30 @@ a {
   }
 }
 
-.team__item {
-  width: calc(100% / 1 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+@media screen and (max-width: 767px) {
+  .team__item {
+    width: calc(100% / 1 - 30px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .team__item {
     width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
     width: calc(100% / 4 - 30px);
-    margin-bottom: 30px;
   }
 }
 
