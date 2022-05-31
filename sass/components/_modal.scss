@@ -30,6 +30,10 @@
       width: 100%;
       height: auto;
     }
+    @media screen and (max-width: 1199px) {
+     max-width: 450px;
+     
+    }
   }
   
   .modal-button {
@@ -74,6 +78,7 @@
   
   .modal-field {
     margin-bottom: 8px;
+    
   }
   
   .modal-input-wrap {
@@ -123,6 +128,7 @@
   
   .input-check {
     margin-bottom: 20px;
+    
   }
   
   .modal-label {
@@ -159,18 +165,24 @@
   }
   
   .check-text {
+    position: relative;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.167px;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     align-items: center;
+    
     margin-bottom: 20px;
-    @media screen and (max-width: 550px) {
+    
+    @media screen and (max-width: 470px) {
       display: flex;
       flex-wrap: wrap;
       font-size: 11px;
+    }
+    @media screen and (min-width: 470px) and (max-width: 1199px) {
+      font-size: 12px;
     }
   }
   
